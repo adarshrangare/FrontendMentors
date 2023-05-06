@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+:root{
+
+    --Softblue: hsl(215, 20%, 51%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    
+    --mainBG: hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--mainBG);
+    font-family: Outfit,sans-serif,Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: var(--White);
+    display: flex;
+    place-items: center;
+     justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+}
+.card{
+    background-color: var(--cardBG);
+    width: 20rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0rem 5rem 3rem  hsl(217, 49%, 8%) ;
+       
+   
+}
+
+
+h2{
+    font-weight: 600;
+    transition: .2s;
+}
+
+h2:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.img{
+    border-radius: 1rem;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.overlay{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    
+    background-color: var(--Cyan);
+    opacity: 0;
+    text-align: center;
+    cursor: pointer;
+    z-index: 2;
+    transition: 0.2s;
+    
+}
+ .img:hover .overlay{
+    opacity: 0.4;
+}
+.img:hover svg{
+    display: block;
+}
+
+.card img{
+    border-radius: 1rem;
+    width: 100%;
+   
+}
+
+.img svg{
+    position: absolute;
+    display: none;
+    transition: 0.2s;
+    
+}
+
+
+.desc p{
+    color: hsl(215, 51%, 70%);
+    font-family: Outfit;
+    font-weight: 300;
+    width: 90%;
+    font-size: 1.1rem;
+}
+.eth{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.eth .ethValue{
+    display: flex;
+    justify-content: flex-start;
+    gap: 2px;
+    font-weight: 600;    
+    color: var(--Cyan);
+    gap: .4rem;
+}
+.time{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: .4rem;
+}
+hr{
+    
+    border: 1px solid var(--line);
+}
+
+.credit{
+    display: flex;
+    height: 2.2rem;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+}
+.credit img{
+    width: auto;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid var(--White);
+}
+.credit p span{
+    color: white;
+    cursor: pointer;
+}
+.credit p span:hover{
+    color: var(--Cyan);
+}
+
+
