@@ -1,5 +1,7 @@
 # Frontend Mentor - Product preview card component
 
+https://product-review-card-adarsh.netlify.app
+
 ![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
