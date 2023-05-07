@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+
+body{
+    display: flex;
+    background-color:hsl(30, 38%, 92%) ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 14px;
+    font-family: Montserrat,Fraunces,sans-serif;
+
+
+}
+.container{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    /* width: 30rem;
+    height: 50vh; */
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 42.857rem;
+    height: auto;
+    margin:30px 15px;
+
+}
+
+.image{
+    background-image: url(./images/image-product-desktop.jpg);
+    background-size: cover;
+    width: 50%;
+    /* width: auto; */
+    
+
+}
+.desc{
+    height: 450px;
+    width: 38%;
+    margin-left: 2.5rem;
+    margin-top: 1rem;   
+    display: flex;
+    flex-direction: column;
+       
+
+}
+h2{
+    font-size: 14px;
+    letter-spacing: 5px;
+    font-weight: 400;
+    color: hsl(228, 12%, 48%);
+}
+
+.desc h1{
+    font-family: Fraunces;
+    font-weight: 700;
+    font-size: 2rem;
+    width: 85%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 2.3rem;
+    color: hsl(212, 21%, 14%);
+}
+p{
+    font-size: 14px;
+    width: 85%;
+    font-weight: 400;
+    color: hsl(228, 12%, 48%);
+    line-height: 20px;
+}
+
+.price{
+    display: flex;
+    width: 85%;
+    margin: 1rem 0 1rem 0;
+    justify-content: space-around;
+    gap: 1rem;
+    
+}
+
+.price p{
+    text-decoration: line-through;
+}
+.price h1{
+    color:hsl(158, 36%, 37%) ;
+}
+.desc button{
+    font-family: Montserrat;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 3rem;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+button:hover{
+background-color: hsl(160, 36%, 17%);
+}
+button:focus{
+    background-color: hsl(160, 36%, 17%);
+    }
+
+
+ @media screen and (max-width:400px) {
+    .container{
+        height: 42.857rem;
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        
+    }
+
+    .desc{
+        padding: 1rem;
+        margin: 0;
+        width: 90%;
+        height: 90%;
+    }
+    
+    .image{
+        background-image: url(./images/image-product-mobile.jpg);
+        background-size: cover;
+        height: 50%;
+        width: 100%;
+        
+    
+    }
+    button{
+        width: 80%;
+    }
+    footer{
+        position: relative;
+        bottom: -10px;
+    }
+
+ }   
