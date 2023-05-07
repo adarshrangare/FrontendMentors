@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+:root{
+
+    --PaleBlue: hsl(225, 100%, 94%);
+    --BrightBlue: hsl(245, 75%, 52%);
+
+    --VeryPaleBlue: hsl(225, 100%, 98%);
+    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --DarkBlue: hsl(223, 47%, 23%);
+
+
+}
+
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: var(--PaleBlue);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main-container h1{
+    margin-bottom: -.1rem;
+    
+}
+
+.main-container{
+    width:26rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    gap: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    
+
+}
+.main-container img{
+    width: 100%;
+}
+.main-container p{
+    color: var(--DesaturatedBlue);
+    width: 80%;
+    font-size: .9rem;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 80%;
+    text-align: center;
+}
+
+
+
+.ChoosePlan{
+    background-color: var(--VeryPaleBlue);
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .8rem;
+    border-radius: 1rem;
+    align-items: center;
+}
+.ChoosePlan a{
+    font-weight: 600;
+    color: var(--BrightBlue);
+}
+.plan{
+    display: flex;
+   
+    gap: 1rem;
+    
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    
+    height: 80%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.text h3{
+    margin: 0;
+    margin-top: .3rem;
+}
+.text p{
+    margin: 0;
+    color: var(--DesaturatedBlue);
+}
+button{
+    margin-top: 1.5rem;
+    width: 95%;
+    padding: .8rem;
+    border: none;
+    border-radius: .7rem;
+    background-color: var(--BrightBlue);
+    font-weight: 600;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+    color: white;
+    box-shadow: 0px 15px 10px -5px hsl(245, 75%, 52%,0.3)  ;
+    cursor: pointer;
+}
+
+h3{
+    font-size: .8rem;
+    margin-top: 1.6rem;
+    color: var(--DesaturatedBlue);
+    cursor: pointer;
+}
+h3:hover{
+    color: var(--DarkBlue);
+}
+
+button:hover{
+    background-color: hsl(245, 75%, 65%);
+}
+
+.ChoosePlan a:hover{
+    color: hsl(245, 75%, 65%);
+    text-decoration: none;
+}
+
+@media screen and (max-width:400px) {
+
+    body{
+        /* background-color:  */
+    background-image: none ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    }
+    .main-container{
+        width: 90%;
+    }
+
+    .description{
+        width: 90%;
+    }
+
+    
+}
